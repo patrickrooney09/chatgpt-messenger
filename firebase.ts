@@ -15,6 +15,9 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-//below is a singleton pattern in coding- meaning we only want a single instance
+//below is a 'singleton' pattern in coding- meaning we only want a single instance
 const app = getApps().length ? getApp() : initializeApp(firebaseConfig);
+
 const db = getFirestore(app);
+
+export { db };
