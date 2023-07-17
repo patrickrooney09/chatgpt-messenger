@@ -47,7 +47,7 @@ function ChatInput({ chatId }: Props) {
     );
     //toast notification
     const notification = toast.loading("ChatGPT is thinking...");
-    await fetch("/api/askQUestion", {
+    await fetch("/api/askQuestion", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
