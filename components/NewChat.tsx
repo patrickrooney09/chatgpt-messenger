@@ -20,6 +20,7 @@ function NewChat() {
     // this should take me to the new chat
     router.push(`/chat/${doc.id}`);
   };
+
   return (
     <div onClick={createNewChat} className="border-gray-700 border chatRow">
       <PlusIcon className="h-4 w-4" /> <p>New Chat</p>
